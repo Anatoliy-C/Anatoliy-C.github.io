@@ -1,0 +1,442 @@
+@import config
+
+// CUSTOM USER STYLES
+
+.head_items
+    min-height: 85px
+    display: flex
+    justify-content: space-between
+    padding-top: 20px
+    margin-bottom: 15px
+    .head_item
+        position: relative
+        .head_icon
+            position: absolute
+            margin-right: 10px
+            top: 0
+            left: 0
+        .head_title
+            font-size: 14px
+            color: #242424
+            font-weight: bold
+            margin-left: 35px
+        a
+            display: block
+            font-size: 12px
+            color: #242424
+            font-weight: light
+            text-decoration: none
+            margin-left: 35px
+        address
+            margin: 0
+            font-size: 12px
+            color: #242424
+            font-weight: light
+            margin-left: 35px
+.sub-header
+    min-height: 700px
+    background-image: url(../images/dest/header-bg.jpg)
+    background-repeat: no-repeat
+    background-position: center
+    background-size: cover
+    &_mnu_wrapp
+        display: flex
+        justify-content: space-between
+        padding-top: 40px
+        .sub-header_mnu_hamburger
+            display: none
+        .sub-header_mnu_items
+            display: flex
+            justify-content: flex-end
+            margin-top: 20px
+            .sub-header_mnu_item
+                margin-left: 45px
+                a
+                    font-size: 13px
+                    font-weight: bold
+                    color: #fff
+                    text-transform: uppercase
+                    &:active
+                        color: #00c2f0
+    .sub-header_content_wrapp
+        display: flex
+        justify-content: space-between
+        margin-top: 120px
+        h1
+            font-size: 42px
+            color: #fff
+            margin: 0
+            line-height: 52px
+        .sub-header_content_text
+            margin-top: 25px
+            margin-bottom: 80px
+            font-size: 24px
+            color: #fff
+            span
+                font-weight: bold
+                text-transform: uppercase
+        button
+            font-size: 16px
+            font-weight: bold
+            color: #fff
+            background-color: #00c2f0
+            border: none
+            width: 240px
+            height: 60px
+            border-radius: 5px
+            text-transform: uppercase
+            margin-bottom: 50px
+        button:hover
+            box-shadow: 0 0 10px #00c2f0
+        .sub-header_content_imeges
+            position: relative
+            .sub-header_content_imege_big
+                position: absolute
+                right: 0
+                bottom: -78px
+            .sub-header_content_imege_smoll
+                position: absolute
+                right: 150px
+                bottom: -78px
+ 
+
+.overlay
+    width: 100%
+    height: 100%
+    background-color: rgba(0, 0, 0, .6)
+    position: fixed
+    top: 0
+    left: 0
+    display: none
+    z-index: 3
+    .popup
+        width: 750px
+        position: fixed
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        .popup-title
+            line-height: 71px
+            margin: 0
+            background-color: #00c2f0
+            color: #ffffff;
+            text-transform: uppercase
+            font-size: 21px
+            font-weight: 500
+            text-align: center
+        .popup-close
+            position: absolute
+            right: -30px
+            top: -50px
+            cursor: pointer
+            font-size: 35px
+            color: #fff
+            font-weight: 300
+        .popup-form-header
+            padding: 0
+            font-weight: 400
+            line-height: 27px
+            font-size: 30px
+            text-align: center
+        .main-form
+            background-image: url(../images/dest/header-bg.jpg)
+            background-repeat: no-repeat
+            background-position: center
+            background-size: cover
+            padding: 35px 88px 50px 88px
+            color: #fff
+        .popup-form__label
+            display: block
+            margin-top: 23px
+            font-size: 20px
+            font-weight: 300
+            text-align: center
+        .popup-form__input
+            width: 365px
+            height: 56px
+            margin-top: 17px
+            font-size: 18px
+            background-color: rgba(8, 8, 8, 0)
+            border: 1px solid #00c2f0
+            color: #fff
+            text-align: center
+        .popup-form__btn
+            width: 180px
+            height: 56px
+            font-size: 15px
+            line-height: 22px
+            margin-left: 16px
+            background-color: transparent
+            color: #fff
+            border: 1px solid #00c2f0
+            cursor: pointer
+        .popup-form__btn:hover
+            box-shadow: 0 0 10px #00c2f0
+        .status
+            font-size: 16px
+            margin-top: 20px
+
+.modules_before,
+.modules_after
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    margin-top: 80px
+.modules_before_item,
+.modules_after_item
+    position: relative
+.modules_before_text,
+.modules_after_text
+    position: absolute
+    bottom: 40px
+    left: 50%
+    transform: translateX(-50%)
+    font-size: 18px
+    color: #393939
+    font-weight: 400
+    text-align: center
+    width: 70%
+.check_up
+    margin-top: 50px
+    text-align: center
+.check_down
+    text-align: center
+    margin-top: -30px
+.check_text
+    text-transform: uppercase
+    font-weight: 700
+    font-size: 48px
+    text-align: center
+    margin: 35px 0
+.modules_after
+    margin-top: 0
+    margin-bottom: 80px
+
+
+.solutions
+    background-image: url(../images/dest/solutions-bg.jpg)
+    background-repeat: 
+    background-size: cover
+    background-position: center
+.title-h2
+    text-align: center
+    margin: 0
+    font-size: 30px
+    font-weight: 700
+    color: #fff
+    padding-top: 80px
+.solutions_mnu_wrapper
+    max-width: 840px
+    height: 60px
+    border: 1px solid #fff
+    border-radius: 6px
+    margin-left: auto
+    margin-right: auto
+    margin-top: 20px
+.solutions_mnu_items
+    display: flex
+    justify-content: space-between
+    padding: 0
+    margin: 0
+    font-size: 14px
+    color: #fff
+.solutions_mnu_item
+    list-style-type: none
+    height: 50px
+    padding: 0 26px
+    line-height: 52px
+    margin: 5px 0
+    cursor: pointer
+    border-right: 1px solid #8ca2a7
+    &:last-child
+        border: none
+.solutions_mnu_item-active
+    color: #00c2f0
+.solutions_img
+    width: 922px
+    height: 548px
+    position: relative
+    img
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 75%
+        height: 87%
+        padding-bottom: 45px
+        border-radius: 6px
+.solutions_nav_doun
+    display: flex
+    justify-content: space-between
+    padding: 35px 0 80px 0
+    position: relative
+.solutions_prev
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    left: 15px
+    cursor: pointer
+.solutions_next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%) rotate(180deg)
+    right: 15px
+    cursor: pointer
+.soutions_slid_container
+    background-image: url(../images/dest/macbook-air.png)
+    background-repeat: 
+    background-position: center
+    background-size: cover
+    margin-left: auto
+    margin-right: auto
+
+.advantages_title
+    color: #393939
+    max-width: 380px
+    margin-left: auto
+    margin-right: auto
+.advantages_gallery_wrapper
+    margin: 40px 0 80px 0
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    text-align: center
+    width: 100%
+.advantages_gallery_item
+    position: relative
+    width: 560px
+    img
+        width: 560px
+.advantages_gallery_images
+    width: 100px
+.advantages_gallery_text
+    position: absolute
+    height: 156px
+    top: 50%
+    left: 50%
+    transform: translate(-50%,-50%)
+    width: 100%
+    padding: 20px 0
+    cursor: pointer
+    background-color: rgba(0,0,0,.6)
+    span
+        width: 360px
+        margin: 0 auto
+        display: block
+        font-size: 26px
+        color: #fff
+        line-height: 32px
+
+
+.options
+    position: relative
+    margin-bottom: 80px
+.options_title
+    max-width: 380px
+    position: absolute
+    top: 75px
+    left: 50%
+    transform: translateX(-50%)
+    padding: 0
+    margin: 0
+    background-color: rgba(0,0,0,.6)
+.options_content
+    display: flex
+    justify-content: center
+    width: 100%
+    min-height: 580px
+.options_content_left
+    width: 50%
+    background-image: url(../images/dest/option-left.jpg)
+    background-repeat: 
+    background-position: center
+    background-size: cover
+    padding-top: 265px
+    text-align: right
+    .options_content_text
+        margin-left: auto
+        padding-right: 80px
+    h3
+        padding-right: 80px
+.options_content_right
+    width: 50%
+    background-image: url(../images/dest/option-right.jpg)
+    background-repeat: 
+    background-position: center
+    background-size: cover
+    padding-top: 265px
+    .options_content_text
+        padding-left: 80px
+    h3
+        padding-left: 80px
+h3
+    margin: 0
+    font-size: 30px
+    color: #fff
+    font-weight: 700
+    padding-top: 20px
+.options_content_text
+    width: 80%
+    color: #fff
+    font-size: 18px
+    margin-top: 15px
+    padding-bottom: 20px
+.options_content_overlay
+    height: auto
+    background-color: rgba(0,0,0,.6)
+
+
+.start
+    text-align: center
+    .start_icon
+        text-align: center
+    h2
+        margin: 72px auto 30px auto
+        text-align: center
+    button
+        font-size: 16px
+        font-weight: bold
+        color: #fff
+        background-color: #00c2f0
+        border: none
+        width: 240px
+        height: 60px
+        border-radius: 5px
+        text-transform: uppercase
+        margin-bottom: 80px
+    button:hover
+        box-shadow: 0 0 10px #00c2f0
+
+
+footer
+    background-color: #00c2f0
+    min-height: 500px
+.footer_wrapper
+    display: flex
+    justify-content: space-between
+    padding: 50px 0
+    border-bottom: 1px solid #4da8bd
+    color: #fff
+.footer_items_title
+    font-size: 16px
+    font-weight: 700
+.footer_items_icon
+    margin-top: 20px
+.footer-logo
+    max-width: 380px
+.footer_items_text
+    margin-top: 20px
+    font-size: 14px
+    font-weight: 400
+.footer_items
+    padding: 20px 10px
+    a
+        color: #fff
+.footer_copy
+    text-align: center
+    padding: 35px 0
+    font-size: 13px
+    color: #fff
+        
+
+@import media
