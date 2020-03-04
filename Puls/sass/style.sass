@@ -1,0 +1,555 @@
+@import "_color"
+
+
+*
+    font-family: 'Museo Sans', sans-serif   
+
+.container
+    max-width: 950px
+    margin: 0 auto
+
+.header
+    max-width: 1920px
+    height: 650px
+    background-image: url(../img/header_bg.jpg)
+    background-repeat: no-repeat
+    bacgound-size: cover
+    background-position: center
+    &_mnu_wrapp
+        padding-top: 20px
+        display: flex
+        justify-content: space-between
+        text-align: center
+        .header_mnu_descr
+            font-size: 12px
+            color: $white
+            & span
+                font-size: 18px
+        .header_mnu_phone
+            color: $white
+            font-size: 18px
+            a
+                color: $white
+                text-decoration: none
+            .header_mnu_btn
+                font-size: 12px
+                color: $white
+                text-align: center
+                background-color: $red
+                width: 150px
+                height: 30px
+                border: none
+                border-radius: 7px
+                margin-top: 8px
+                text-transform: uppercase
+    .descr_mobile
+        display: none
+    h1
+        margin: 0
+        padding: 0
+        color: $white
+        font-size: 42px
+        margin-top: 90px
+        text-transform: uppercase
+        display: flex
+        justify-content: flex-end
+    .header_text
+        color: $white
+        font-size: 24px
+        text-transform: uppercase
+        display: flex
+        justify-content: flex-end
+        letter-spacing: 0.2px
+    .header_icons_wrap
+        display: flex
+        margin-left: auto
+        width: 425px
+        margin-top: 70px
+        text-align: center
+        .header_icon_text
+            font-size: 14px
+            color: $white
+            margin-top: 22px
+    .header_btn
+        display: flex
+        margin-left: auto
+        font-size: 16px
+        color: $white
+        justify-content: center
+        background-color: $red
+        width: 300px
+        height: 50px
+        border: none
+        border-radius: 7px
+        text-transform: uppercase
+        margin-top: 65px
+    .header_link
+        margin-top: 18px
+        font-size: 16px
+        color: $white
+        display: flex
+        justify-content: flex-end
+        & a
+            text-transform: uppercase
+            color: $white
+            margin-left: 5px
+.advanteges
+    min-height: 530px
+    background-color: #f6f6f6
+.advantege
+    display: block
+    font-size: 30px
+    text-align: center
+    color: $black
+    margin: 0
+    padding-top: 70px
+.advanteges_items
+    display: flex
+    justify-content: space-between
+    text-align: center
+    margin-top: 70px
+    padding-bottom: 30px
+.adventeg_item
+    width: 250px
+    padding: 0 10px
+.adventeg_title
+    color: $black
+    font-size: 18px
+    font-weight: 700
+    margin-top: 45px
+.adventeg_text
+    font-size: 14px
+    color: $black
+    margin-top: 25px
+    a
+        color: #ff0000
+.consultations
+    min-height: 680px
+    padding: 100px 0 90px 0
+    background-image: url(../img/consultation_bg.jpg)
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center
+    .consultation
+        margin: 0
+        padding: 0 15px
+        font-size: 36px
+        line-height: 36px
+        text-transform: uppercase
+        color: $white
+
+    .consultation_text
+        font-size: 20px
+        line-height: 20px
+        color: $white
+        margin-top: 80px
+        padding: 0 15px
+    form
+        margin-top: 40px
+        padding: 0 15px
+        input
+            font-size: 14px
+            color: #4b4b4b
+            display: block
+            margin-bottom: 15px
+            padding: 0 20px
+            width: 300px
+            height: 50px
+            border-radius: 6px
+            border: none
+            &:nth-child(3)
+                margin-bottom: 20px
+        button
+            text-transform: uppercase
+            width: 300px
+            height: 50px
+            background-color: $red
+            border: none
+            border-radius: 6px
+            color: $white
+            font-size: 16px
+.carousel_wrapp
+    .carousel_item
+        position: relative
+        padding: 81px 0
+        width: 750px
+    .slick-slide 
+        img
+            margin: 0 auto
+            width: 100%
+            padding: 0 15px
+    .slick-prev
+        position: absolute
+        top: 50%
+        transform: translateY(-50%)
+        left: -66px
+        border: none
+        background-color: $white
+        img
+            width: 31px
+            height: 50px
+    .slick-next
+        position: absolute
+        bottom: 50%
+        transform: translateY(50%)
+        right: -66px
+        border: none
+        background-color: $white
+        img
+            width: 31px
+            height: 50px
+    .slick-dots
+        padding: 0
+        list-style-type: none
+        display: flex
+        justify-content: center
+        button
+            padding: 0 5px
+            width: 15px
+            height: 15px
+            border-radius: 50%
+            margin-left: 5px
+            margin-right: 5px
+            border: none
+            background-color: $red
+            color: $red
+            font-size: 1px
+
+.catalog
+    padding-bottom: 100px
+    h2
+        text-transform: uppercase
+        text-align: center
+        font-size: 30px
+        color: $black
+        margin-bottom: 60px
+    .catalog_mnu_items
+        list-style-type: none
+        display: flex
+        justify-content: center
+        margin: 0 20px
+        padding: 0
+        .catalog_mnu_item
+            width: 220px
+            height: 50px
+            border: 2px solid $beige
+            text-transform: uppercase
+            color: #6b6b6b
+            font-size: 18px
+            text-align: center
+            line-height: 48px
+            transform: skewX(-25deg)
+            margin: 0 5px
+            cursor: pointer
+            transition: .5s all
+            &:hover
+                box-shadow: 3px 3px 20px $red
+                border: none
+            div
+                transform: skewX(25deg)
+            &_active
+                background-color: $red
+                color: $white
+                border: none
+    .catalog_content
+        margin-top: 60px
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        text-align: center
+        display: none
+        &_active
+            display: flex
+        &_item
+            width: 300px
+            min-height: 440px
+            border: 2px solid #e8e8e8
+            padding: 0 18px
+            overflow: hidden
+            margin-bottom: 20px
+            img
+                max-width: 100%
+                height: 200px
+                display: block
+                margin-left: auto
+                margin-right: auto
+                margin-top: 15px
+                margin-bottom: 15px
+        &_subtitle
+                color: $black
+                font-size: 16px
+                text-align: center
+                font-weight: 700
+                margin-bottom: 15px
+        &_text
+            font-size: 14px
+            color: $black
+            text-align: center
+            font-weight: 600
+            margin-bottom: 13px
+            line-height: 18px
+        a
+            color: $red
+            text-decoration: none
+            border-bottom: 1px solid $red
+            font-size: 14px
+            font-weight: 600
+        hr
+            margin-top: 20px
+        &_price-wrapper
+            display: flex
+            justify-content: space-between
+            margin-top: 20px
+            margin-bottom: 25px
+            button
+                width: 130px
+                height: 40px
+                font-size: 14px
+                color: $white
+                background-color: $red
+                border: none
+                border-radius: 7px
+                margin-top: 5px
+        .catalog_content_price
+            text-align: left
+            .catalog_content_old-price
+                font-size: 14px
+                color: #555
+                text-decoration: line-through
+            .new_price
+                font-size: 20px
+                color: #050505
+                font-weight: 600
+        &_wrapper
+            display: flex
+            width: calc(200% + 40px)
+        &_face
+            width: 50%
+            margin-right: 0px
+            transform: translateX(-100%)
+            transition: .5s all
+            &_active
+                margin-right: 20px
+                transform: translateX(0%)  
+        &_description
+            width: 50%
+            margin-left: 20px
+            padding-right: 20px
+            transform: translateX(0%)
+            transition: .5s all
+            ul
+                position: relative
+                text-align: left
+                padding-left: 0
+                margin: 0 20px
+                margin-top: 22px
+                li
+                    position: relative
+                    font-size: 14px
+                    line-height: 18px
+                    color: #555
+                    margin-bottom: 20px
+                    font-weight: 500
+                    list-style-type: none
+                    &::before
+                        position: absolute
+                        content: ''
+                        width: 5px
+                        height: 5px
+                        background-color: $red
+                        left: -14px
+                        top: 6px
+
+            &_active
+                transform: translateX(-100%)
+                margin-left: 0px
+            a
+                text-transform: uppercase
+                color: $red
+                text-decoration: none
+                border-bottom: 1px solid $red
+                font-size: 14px
+                font-weight: 600
+                position: absolute
+                bottom: 0
+                left: 50%
+                transform: translateX(-70%)
+
+.reviews
+    h2
+        text-transform: uppercase
+        text-align: center
+        font-size: 30px
+        color: $black
+        margin-bottom: 60px
+    &_wrapp
+        display: flex
+        justify-content: start
+        position: relative
+        min-height: 275px
+        margin: 50px 15px
+        .reviews_photo
+            position: absolute
+            top: 50%
+            transform: translateY(-60%)
+            img
+                border-radius: 50%
+                width: 175px
+        .reviews_content
+            margin-left: 230px
+            .reviews_title
+                font-size: 18px
+                font-weight: 700
+                color: $black
+            .reviews_description
+                font-size: 14px
+                color: #646464
+                font-weight: 600
+            .reviews_text,
+            .reviews_reviews
+                font-size: 16px
+                color: $black
+                font-weight: 500
+                margin-top: 20px
+hr
+    border-bottom: none
+
+footer
+    position: relative
+    iframe
+        width: 100%
+        height: 630px   
+    .footer_info
+        max-width: 460px
+        height: 270px
+        position: absolute
+        top: 0
+        left: 50%
+        transform: translateX(-50%)
+        background-color: $red
+        text-align: center
+        padding: 50px 68px 60px 68px
+        font-size: 20px
+        color: $white
+        font-weight: 500
+        a
+            color: $white
+        .footer_social_wrapper
+            margin-top: 35px
+            margin-left: auto
+            margin-right: auto
+            display: flex
+            justify-content: center
+            .footer_social_items
+                width: 50px
+                height: 50px
+                border: 2px solid $white
+                border-radius: 100%
+                margin-left: 15px
+                margin-right: 15px
+                position: relative
+                a
+                    img
+                        color: $white
+                        height: 27px
+                        position: absolute
+                        top: 25%
+                        left: 25%
+
+.overley
+    display: none
+    position: fixed
+    top: 0
+    width: 100%
+    height: 100%
+    background-color: rgba(0,0,0, .56)
+    .modal
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        width: 380px
+        min-height: 400px
+        background-color: #f2f2f2f2
+        margin: 0 10px
+        .modal_close
+            position: absolute
+            top: 15px
+            right: 15px
+            font-size: 41px
+            color: $red
+            line-height: 21px
+            cursor: pointer
+        form
+        padding: 40px
+        input
+            font-size: 14px
+            color: #4b4b4b
+            display: block
+            margin-bottom: 15px
+            padding: 0 20px
+            width: 300px
+            height: 50px
+            border-radius: 6px
+            border: none
+            &:nth-child(3)
+                margin-bottom: 20px
+        button
+            text-transform: uppercase
+            width: 300px
+            height: 50px
+            background-color: $red
+            border: none
+            border-radius: 6px
+            color: $white
+            font-size: 16px
+        .modal_subtitle
+            font-size: 19px
+            color: $black
+            text-align: center
+            font-weight: 500
+            margin-bottom: 10px
+        .modal_descr
+            font-size: 14px
+            color: $black
+            text-align: center
+            font-weight: 600
+            margin-bottom: 25px
+#thanks
+    min-height: 140px
+    display: none
+#consultation, #order
+    display: none
+
+.adventeg_img_animated
+    img
+        animation-name: heartbeat
+        animation-duration: 2s
+        animation-timing-function: ease
+        animation-iteration-count: infinite
+        &:hover
+            animation-play-state: paused
+
+
+
+@keyframes heartbeat
+    form
+        transform: scale(1)
+    50%
+        transform: scale(1.4)
+    to
+        transform: scale(1)
+
+
+
+
+
+                
+
+
+                
+
+
+
+
+@import "_media"
