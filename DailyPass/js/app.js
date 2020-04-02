@@ -11,7 +11,20 @@ window.addEventListener("DOMContentLoaded", function () {
         $('.overley-form, #consultation').fadeOut('slow');
     });
 
-    //E-mail Ajax Send
+
+
+
+
+    $('.defolt_btn').on('click', function(){
+        $('.form_box, #thanks').fadeOut('slow');
+    });
+
+
+    $('.defolt_btn').on('click', function(){
+        $('.modal, #thanks').fadeIn('slow');
+    });
+
+    // E-mail Ajax Send
     // $("form").submit(function () { //Change
     //     var th = $(this);
     //     $.ajax({
