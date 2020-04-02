@@ -15,14 +15,14 @@ window.addEventListener("DOMContentLoaded", function () {
 
 
 
-    $('.defolt_btn').on('click', function(){
-        $('.form_box, #thanks').fadeOut('slow');
-    });
+    // $('defolt_btn').on('click', function(){
+    //     $('.modal').fadeOut('slow');
+    // });
 
 
-    $('.defolt_btn').on('click', function(){
-        $('.modal, #thanks').fadeIn('slow');
-    });
+    // $('defolt_btn]').on('click', function(){
+    //     $('.modal').fadeIn('slow');
+    // });
 
     // E-mail Ajax Send
     // $("form").submit(function () { //Change
