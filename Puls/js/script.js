@@ -2,7 +2,7 @@ $(document).ready(function () {
     $('.carousel_wrapp').slick({
         speed: 1200,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/chevron-left-solid.png"></button>',
-        nextArrow: '<button type="button" class="slick-next"><img src="img/chevron-right-solid.png" </button>',
+        nextArrow: '<button type="button" class="slick-next"><img src="img/chevron-right-solid.png"></button>',
         responsive: [{
             breakpoint: 1100,
             settings: {
