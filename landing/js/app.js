@@ -14,7 +14,7 @@ window.addEventListener("DOMContentLoaded", function () {
 
     // Поп ап Галерея
 
-    $(function() {
+    $(function () {
         $('.gallery_wrapp').magnificPopup({
             delegate: 'a',
             type: 'image',
@@ -23,9 +23,27 @@ window.addEventListener("DOMContentLoaded", function () {
             gallery: {
                 enabled: true,
                 navigateByImgClick: true,
-                preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+                preload: [0, 1] // Will preload 0 - before current, and 1 after the current image
             },
         });
+    });
+
+
+    //E-mail Ajax Send
+    $("form").submit(function () { //Change
+        var th = $(this);
+        $.ajax({
+            type: "POST",
+            url: "mail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            alert("Thank you!");
+            setTimeout(function () {
+                // Done Functions
+                th.trigger("reset");
+            }, 1000);
+        });
+        return false;
     });
 
 });
