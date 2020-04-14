@@ -4,7 +4,7 @@
 <head>
 
 	<meta charset="utf-8">
-	<title></title>
+	<title>landing</title>
 	<!-- <link rel="shortcut icon" href="/images/dest/favicon.ico" type="image/x-icon"> -->
 	<!-- <meta name="description" content=""> -->
 	<!-- <meta name="google-site-verification" content="o94sGJy3-IC8wWx9T806lx-SfO5KZ0PQ5ElGxdmBqvM" />
@@ -40,7 +40,7 @@
 		</div>
 	</header>
 
-	<section class="about-us" id="about-us">
+	<div class="about-us" id="about-us">
 		<div class="container">
 			<div class="abaut-us_section">
 				<div class="about-us_text-block">
@@ -91,9 +91,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="gallery" id="gallery">
+	<div class="gallery" id="gallery">
 		<div class="container">
 			<div class="gallery_wrapp">
 				<a href="images/dest/5.jpg"><img src="images/dest/5.jpg" alt="alt"></a>
@@ -113,9 +113,9 @@
 				<a href="images/dest/5.jpg"><img src="images/dest/5.jpg" alt="alt"></a>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="price" id="price">
+	<div class="price" id="price">
 		<div class="container">
 			<div class="price_wrapp">
 				<div class="price-tag">
@@ -153,17 +153,25 @@
 					<div class="widget">
 						<form>
 							<!-- Hidden Required Fields -->
-							<input type="hidden" name="Наименование сайта" value="">
-							<input type="hidden" name="admin_email" value="tychinin2803@gmail.com">
+							<input type="hidden" name="Наименование сайта" value="landing">
+							<input type="hidden" name="admin_email" value="atsarkov.13@yandex.ru">
 							<input type="hidden" name="форма отправки" value="">
 							<!-- END Hidden Required Fields -->
 							<div class="form_box">
-								<p><input name="Вариант 1" type="radio" value="1"> Вариант 1</p>
-								<p><input name="Вариант 2" type="radio" value="2"> Вариант 2</p>
-								<p><input name="Вариант 3" type="radio" value="3"> Вариант 3</p>
-								<p><input name="Вариант 4" type="radio" value="4"> Вариант 4</p>
+								<p><input type="radio" onMouseDown="this.isChecked=this.checked;"
+										onClick="this.checked=!this.isChecked;" name="радио кнопка" value="0" /> Первый пункт
+								</p>
+								<p><input type="radio" onMouseDown="this.isChecked=this.checked;"
+										onClick="this.checked=!this.isChecked;" name="радио кнопка" value="1" /> Второй пункт
+								</p>
+								<p><input type="radio" onMouseDown="this.isChecked=this.checked;"
+										onClick="this.checked=!this.isChecked;" name="радио кнопка" value="2" /> Третий пункт
+								</p>
+								<p><input type="radio" onMouseDown="this.isChecked=this.checked;"
+										onClick="this.checked=!this.isChecked;" name="радио кнопка" value="3" /> Четвертый пункт
+								</p>
 								<input type="tel" name="Телефон" placeholder="Контактный телефон" required>
-								<textarea name="textarea" value="">Ввод площади</textarea>
+								<textarea name="Текстовое поле">Ввод площади</textarea>
 								<button type="submit">Рассчитать</button>
 							</div>
 						</form>
@@ -171,9 +179,9 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="contacts" id="contacts">
+	<div class="contacts" id="contacts">
 		<div class="container">
 			<div class="contacts_wrapp">
 				<div class="map">
@@ -188,14 +196,16 @@
 						<a href="tel:+79999999999">+ 7 (999) 999-99-99</a>
 					</div>
 					<a href="https://vk.com" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a>
-					<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
-					<a href="https://ru-ru.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+					<a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"
+							aria-hidden="true"></i></a>
+					<a href="https://ru-ru.facebook.com" target="_blank"><i class="fa fa-facebook"
+							aria-hidden="true"></i></a>
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
-	<section class="reviews" id="reviews">
+	<div class="reviews" id="reviews">
 		<div class="container">
 			<div class="reviews_items">
 				<div class="reviews_item">
@@ -205,7 +215,7 @@
 						eveniet,
 						obcaecati, suscipit fugit, fugiat quisquam consectetur dolorem.</div>
 				</div>
-				<div class="reviews_item">
+				<div class="reviews_item right">
 					<div class="reviews_text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti
 						perspiciatis mollitia ut unde, inventore labore ad! Quasi ullam non excepturi voluptas quo
 						eveniet,
@@ -221,7 +231,7 @@
 				</div>
 			</div>
 		</div>
-	</section>
+	</div>
 
 	<footer>
 		<div class="container">
@@ -230,9 +240,12 @@
 					<a href="#home"><i class="fa fa-angle-double-up" aria-hidden="true"></i></a>
 				</div>
 				<div class="footer_sicial">
-					<div class="footer_sicial_item"><a href="https://vk.com" target="_blank"><i class="fa fa-vk" aria-hidden="true"></i></a></div>
-					<div class="footer_sicial_item"><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
-					<div class="footer_sicial_item"><a href="https://ru-ru.facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a></div>
+					<div class="footer_sicial_item"><a href="https://vk.com" target="_blank"><i class="fa fa-vk"
+								aria-hidden="true"></i></a></div>
+					<div class="footer_sicial_item"><a href="https://www.instagram.com" target="_blank"><i
+								class="fa fa-instagram" aria-hidden="true"></i></a></div>
+					<div class="footer_sicial_item"><a href="https://ru-ru.facebook.com" target="_blank"><i
+								class="fa fa-facebook" aria-hidden="true"></i></a></div>
 				</div>
 				<div class="footer_contact">
 					<address>Москва<span>Ул Красная д 1</span></address>
